@@ -1,0 +1,13 @@
+@import "base/defaults";
+
+// Import utility classes
+@import "base/utilities/margin";
+@import "base/utilities/padding";
+@import "base/utilities/typography";
+@import "base/utilities/color";
+@import "base/utilities/border";
+@import "base/utilities/border-radius";
+@import "base/utilities/box-shadow";
+
+// Import theme
+@import "base/theme/modern";

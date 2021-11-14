@@ -1,0 +1,23 @@
+{
+  "name": "forget.css",
+  "version": "0.0.1",
+  "description": "Forget the styling norms. Quickly prototype your styles, effortlessly.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "build": "sass src/index.scss dist/index.css --style compressed",
+    "dev": "sass --watch src/index.scss dist/index.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxson52/forget.css.git"
+  },
+  "author": "Max T",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxson52/forget.css/issues"
+  },
+  "homepage": "https://github.com/maxson52/forget.css#readme",
+  "dependencies": {
+    "np": "^7.5.0"
+  }
+}

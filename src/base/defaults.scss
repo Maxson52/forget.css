@@ -1,0 +1,25 @@
+// Defaults
+// --------------------------------------------------
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: clamp(2rem, 6vh, 6rem) clamp(2rem, 8vw, 16rem);
+}
+
+// Fonts
+// --------------------------------------------------
+body {
+  font-family: $body-font;
+  font-size: $size-body;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 2rem 0;
+
+    font-size: $size-h1 - (0.2 * $i);
+  }
+}

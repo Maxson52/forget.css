@@ -1,0 +1,153 @@
+// --------------------------------------------------
+// MODERN THEME
+// --------------------------------------------------
+
+h1:not(.forget),
+h2:not(.forget),
+h3:not(.forget),
+h4:not(.forget),
+h5:not(.forget),
+h6:not(.forget) {
+  font-family: $header-font;
+}
+
+// Text inputs
+input[type="text"]:not(.forget),
+input[type="password"]:not(.forget),
+input[type="email"]:not(.forget),
+input[type="url"]:not(.forget),
+input[type="tel"]:not(.forget),
+input[type="number"]:not(.forget),
+input[type="date"]:not(.forget),
+input[type="month"]:not(.forget),
+input[type="week"]:not(.forget),
+input[type="time"]:not(.forget),
+input[type="datetime"]:not(.forget),
+input[type="datetime-local"]:not(.forget),
+input[type="search"]:not(.forget),
+textarea:not(.forget) {
+  @extend .br-2;
+  @extend .fs-body;
+  @extend .m-3;
+
+  padding: 1.2rem;
+  border: 1px solid $gray-light;
+
+  transition: border 0.1s ease-in-out;
+
+  &:focus {
+    @extend .b-gray;
+
+    outline: none;
+  }
+
+  &:placeholder-shown {
+    font-style: italic;
+  }
+}
+
+// Clicky inputs
+input[type="submit"]:not(.forget),
+input[type="reset"]:not(.forget),
+input[type="button"]:not(.forget),
+button:not(.forget) {
+  @extend .bg-blue;
+  @extend .white;
+  @extend .fs-body;
+  @extend .br-2;
+  @extend .py-3;
+  @extend .px-5;
+
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+  }
+
+  &:disabled {
+    background-color: $gray-dark;
+  }
+}
+
+// Links
+
+a:not(.forget) {
+  @extend .blue;
+
+  text-decoration: underline;
+  text-underline-position: under;
+
+  transition: color 0.1s ease-in-out;
+
+  &:hover {
+    color: $blue-dark;
+  }
+}
+
+// Code and pre
+code:not(.forget),
+pre:not(.forget) {
+  @extend .black;
+  @extend .p-3;
+
+  font-family: $monospace-font;
+  background-color: $gray-light;
+  vertical-align: middle;
+  white-space: pre;
+}
+
+// Keyboard
+kbd:not(.forget) {
+  @extend .black;
+  @extend .br-2;
+  @extend .b-gray;
+
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+  font-family: $monospace-font;
+  vertical-align: middle;
+  background-color: $gray-light;
+  border-bottom: solid 2px $gray;
+}
+
+//Tables
+table:not(.forget) {
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+thead:not(.forget) {
+  font-weight: bold;
+  text-align: left;
+}
+td:not(.forget),
+th:not(.forget) {
+  @extend .p-1;
+}
+tbody:not(.forget) tr:nth-child(odd) {
+  background-color: $gray-light;
+}
+
+// Blockquote
+blockquote:not(.forget) {
+  border-left: solid 4px $blue;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+// Horizontal rule
+hr:not(.forget) {
+  border: none;
+  border-top: solid 1px $gray-dark;
+  margin: 2rem 0;
+}
