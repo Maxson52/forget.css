@@ -2,6 +2,7 @@
   "name": "forget.css",
   "version": "0.0.1",
   "description": "Forget the styling norms. Quickly prototype your styles, effortlessly.",
+  "main": "dist/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "build": "sass src/index.scss dist/index.css --style compressed",
