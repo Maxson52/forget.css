@@ -1,6 +1,6 @@
 {
   "name": "forget.css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Forget the styling norms. Quickly prototype your styles, effortlessly.",
   "main": "dist/index.css",
   "scripts": {
