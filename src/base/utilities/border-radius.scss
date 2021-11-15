@@ -1,4 +1,4 @@
-// // Border Radius Utliity Classes
+// // Border Radius Utility Classes
 // --------------------------------------------------
 
 .br-0 {
@@ -39,4 +39,8 @@
 
 .br-9 {
   border-radius: $size-9;
+}
+
+.br-circle {
+  border-radius: 100%;
 }

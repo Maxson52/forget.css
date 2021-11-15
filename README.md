@@ -1,4 +1,5 @@
 <div align="center">
+    <img src="logo.png" width="175" alt="Forget.css">
     <h1>forget.css</h1>
     <p>Forget the styling norms. Quickly prototype your styles, effortlessly.</p>
     <br>

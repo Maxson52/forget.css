@@ -99,12 +99,16 @@ a:not(.forget) {
 code:not(.forget),
 pre:not(.forget) {
   @extend .black;
-  @extend .p-3;
 
   font-family: $monospace-font;
   background-color: $gray-light;
   vertical-align: middle;
   white-space: pre;
+}
+
+pre:not(.forget) {
+  @extend .p-3;
+  overflow: scroll;
 }
 
 // Keyboard
