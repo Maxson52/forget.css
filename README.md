@@ -10,7 +10,7 @@
 Import in your HTML:
 
 ```html
-<link rel="stylesheet" href="link.com" />
+<link rel="stylesheet" href="https://unpkg.com/forget.css@latest/dist/index.css" />
 ```
 
 With npm:
