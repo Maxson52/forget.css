@@ -14,7 +14,7 @@
 		<link rel="preload" as="script" crossorigin="anonymous" href="https://maxson52.github.io/forget.css/_app/immutable/entry/_layout.svelte.9a81b0c3.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="https://maxson52.github.io/forget.css/_app/immutable/entry/_layout.js.2ba8a39e.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="https://maxson52.github.io/forget.css/_app/immutable/chunks/_layout.a05a3d5c.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="https://maxson52.github.io/forget.css/_app/immutable/entry/_page.svelte.eaceecb8.mjs"><title>forget.css - Home</title><!-- HEAD_svelte-xjfv6z_START --><link rel="stylesheet" href="https://unpkg.com/forget.css@latest/dist/index.css" class="svelte-1o8bttd"><link rel="icon" href="/forget.css/logo.png" class="svelte-1o8bttd"><!-- HEAD_svelte-xjfv6z_END --><!-- HEAD_svelte-1jasxrf_START --><!-- HEAD_svelte-1jasxrf_END -->
+		<link rel="preload" as="script" crossorigin="anonymous" href="https://maxson52.github.io/forget.css/_app/immutable/entry/margin-page.svelte.9c3502c9.mjs"><title>forget.css - Margin</title><!-- HEAD_svelte-xjfv6z_START --><link rel="stylesheet" href="https://unpkg.com/forget.css@latest/dist/index.css" class="svelte-1o8bttd"><link rel="icon" href="/forget.css/logo.png" class="svelte-1o8bttd"><!-- HEAD_svelte-xjfv6z_END --><!-- HEAD_svelte-it7d3u_START --><!-- HEAD_svelte-it7d3u_END -->
   </head>
   <body>
     <div id="svelte">
@@ -45,77 +45,28 @@
 
 <div>
 
-<blockquote>⚡ forget.css is a dead simple, drop-in, and customizable css library. With a
-  familiar syntax, forget.css is easy to learn no matter your styling skills.
-</blockquote>
+<h3>Margin</h3>
+
+<p>Margin utilities are easy and versatile!</p>
+<p>Use <code>.m-</code> then your size, for margin applied to all four sizes of the
+  element.
+</p>
+<p>For margin on the left and right or top and bottom, use <code>.mx-</code> and
+  <code>.my-</code> respectively, followed by the size.
+</p>
+<p>And finally, add t, l, b, or r or top, left, bottom, and right marign.</p>
 
 <br>
 
-<h3>Getting Started</h3>
+<p>Example:</p>
+<pre>class=&quot;b-blue my-3 ml-2 mr-8&quot;</pre>
+<div class="b-black"><div class="b-blue my-3 ml-2 mr-8"></div></div>
 
-<p>Import in your HTML:</p>
-<pre> &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/forget.css@latest/dist/index.css&quot; /&gt; </pre>
-<p>With npm:</p>
-<pre>npm i forget.css 
-  
-# import &#39;../node_modules/forget.css/dist/index.css&#39;
-</pre>
-
-<blockquote>💥 Just like that, you&#39;ve already got yourself some awesome styling.
-</blockquote>
-
-<br>
-
-<h3>Usage</h3>
-<p>Styles are added automatically to your most commonly used elements.</p>
-<ul><li>Buttons</li>
-  <li>Inputs</li>
-  <li>Lists</li>
-  <li>Tables</li>
-  <li>And more!</li></ul>
-
-<p>Don&#39;t like the styles of an element? Add the <code>forget</code> class to forget
-  about it.
+<p>You can also use the utility class <code>.m-auto</code> for automatic margin. This
+  works for any of the prefixes listed above.
 </p>
-
-<button class="mb-3">Cool Button</button>
-<br>
-<button class="forget mb-3">Not Cool Button</button>
-
-<blockquote>🚀 Wanna take it one step further? Try out some of the utility classes
-  included with forget.css
-</blockquote>
-
-<br>
-
-<h3>Utility Classes</h3>
-
-<p>All utility classes follow a familiar naming scheme. A shorthand reference to
-  the property, such as <code>mb</code> for <code>margin-bottom</code>, a
-  hyphen, then a number 0 through 9 which represents the size in rem units.
-  Essetially, a prefix and a suffix. The prefix states the property you want to
-  target, and the suffix states the size or variable you&#39;re changing.
-</p>
-
-<p>The values that 1-9 correspond with are</p>
-<ol><li>0.5rem</li>
-  <li>0.75rem</li>
-  <li>1rem</li>
-  <li>1.5rem</li>
-  <li>2rem</li>
-  <li>3rem</li>
-  <li>4rem</li>
-  <li>5rem</li>
-  <li>10rem</li></ol>
-
-<p>Certain utility classes have more than just 0-9, such as <code>.m-auto</code>
-  which applies a margin of auto.
-</p>
-
-<p>In addition, forget.css uses a base 10 system, meaning 1rem is equal to 10px.
-</p>
-
-<p>Read more about the utility classes on their respective pages.</p></div>
+<div class="m-auto bg-blue white p-3 br-2" style="width: 10%;text-align: center;">Center Me!
+</div></div>
 
 <hr class="svelte-1o8bttd">
 
@@ -141,7 +92,7 @@
 						import("https://maxson52.github.io/forget.css/_app/immutable/entry/app.2bca226e.mjs")
 					]).then(([kit, app]) => {
 						kit.start(app, __sveltekit_1t785ks.element, {
-							node_ids: [0, 2],
+							node_ids: [0, 5],
 							data,
 							form: null,
 							error: null
