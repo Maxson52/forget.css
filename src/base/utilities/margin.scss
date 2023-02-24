@@ -6,334 +6,85 @@
   margin: auto;
 }
 
-.m-0 {
-  margin: $size-0;
+@for $i from 1 through 10 {
+  .m-#{$i - 1},
+  .m-#{$i - 1}:hover {
+    margin: nth($sizes, $i);
+  }
 }
 
-.m-1 {
-  margin: $size-1;
-}
-
-.m-2 {
-  margin: $size-2;
-}
-
-.m-3 {
-  margin: $size-3;
-}
-
-.m-4 {
-  margin: $size-4;
-}
-
-.m-5 {
-  margin: $size-5;
-}
-
-.m-6 {
-  margin: $size-6;
-}
-
-.m-7 {
-  margin: $size-7;
-}
-
-.m-8 {
-  margin: $size-8;
-}
-
-.m-9 {
-  margin: $size-9;
-}
-
-// X axis margin utilities
+// X margin
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-0 {
-  margin-left: $size-0;
-  margin-right: $size-0;
+@for $i from 1 through 10 {
+  .mx-#{$i - 1},
+  .mx-#{$i - 1}:hover {
+    margin-left: nth($sizes, $i);
+    margin-right: nth($sizes, $i);
+  }
 }
 
-.mx-1 {
-  margin-left: $size-1;
-  margin-right: $size-1;
-}
-
-.mx-2 {
-  margin-left: $size-2;
-  margin-right: $size-2;
-}
-
-.mx-3 {
-  margin-left: $size-3;
-  margin-right: $size-3;
-}
-
-.mx-4 {
-  margin-left: $size-4;
-  margin-right: $size-4;
-}
-
-.mx-5 {
-  margin-left: $size-5;
-  margin-right: $size-5;
-}
-
-.mx-6 {
-  margin-left: $size-6;
-  margin-right: $size-6;
-}
-
-.mx-7 {
-  margin-left: $size-7;
-  margin-right: $size-7;
-}
-
-.mx-8 {
-  margin-left: $size-8;
-  margin-right: $size-8;
-}
-
-.mx-9 {
-  margin-left: $size-9;
-  margin-right: $size-9;
-}
-
-// Y axis margin utilities
+// Y margin
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.my-0 {
-  margin-top: $size-0;
-  margin-bottom: $size-0;
+@for $i from 1 through 10 {
+  .my-#{$i - 1},
+  .my-#{$i - 1}:hover {
+    margin-top: nth($sizes, $i);
+    margin-bottom: nth($sizes, $i);
+  }
 }
 
-.my-1 {
-  margin-top: $size-1;
-  margin-bottom: $size-1;
-}
-
-.my-2 {
-  margin-top: $size-2;
-  margin-bottom: $size-2;
-}
-
-.my-3 {
-  margin-top: $size-3;
-  margin-bottom: $size-3;
-}
-
-.my-4 {
-  margin-top: $size-4;
-  margin-bottom: $size-4;
-}
-
-.my-5 {
-  margin-top: $size-5;
-  margin-bottom: $size-5;
-}
-
-.my-6 {
-  margin-top: $size-6;
-  margin-bottom: $size-6;
-}
-
-.my-7 {
-  margin-top: $size-7;
-  margin-bottom: $size-7;
-}
-
-.my-8 {
-  margin-top: $size-8;
-  margin-bottom: $size-8;
-}
-
-.my-9 {
-  margin-top: $size-9;
-  margin-bottom: $size-9;
-}
-
-// Top margin utilities
+// Top margin
 .mt-auto {
   margin-top: auto;
 }
 
-.mt-0 {
-  margin-top: $size-0;
+@for $i from 1 through 10 {
+  .mt-#{$i - 1},
+  .mt-#{$i - 1}:hover {
+    margin-top: nth($sizes, $i);
+  }
 }
 
-.mt-1 {
-  margin-top: $size-1;
-}
-
-.mt-2 {
-  margin-top: $size-2;
-}
-
-.mt-3 {
-  margin-top: $size-3;
-}
-
-.mt-4 {
-  margin-top: $size-4;
-}
-
-.mt-5 {
-  margin-top: $size-5;
-}
-
-.mt-6 {
-  margin-top: $size-6;
-}
-
-.mt-7 {
-  margin-top: $size-7;
-}
-
-.mt-8 {
-  margin-top: $size-8;
-}
-
-.mt-9 {
-  margin-top: $size-9;
-}
-
-// Left margin utilities
-.ml-auto {
-  margin-left: auto;
-}
-
-.ml-0 {
-  margin-left: $size-0;
-}
-
-.ml-1 {
-  margin-left: $size-1;
-}
-
-.ml-2 {
-  margin-left: $size-2;
-}
-
-.ml-3 {
-  margin-left: $size-3;
-}
-
-.ml-4 {
-  margin-left: $size-4;
-}
-
-.ml-5 {
-  margin-left: $size-5;
-}
-
-.ml-6 {
-  margin-left: $size-6;
-}
-
-.ml-7 {
-  margin-left: $size-7;
-}
-
-.ml-8 {
-  margin-left: $size-8;
-}
-
-.ml-9 {
-  margin-left: $size-9;
-}
-
-// Bottom margin utilities
+// Bottom margin
 .mb-auto {
   margin-bottom: auto;
 }
 
-.mb-0 {
-  margin-bottom: $size-0;
+@for $i from 1 through 10 {
+  .mb-#{$i - 1},
+  .mb-#{$i - 1}:hover {
+    margin-bottom: nth($sizes, $i);
+  }
 }
 
-.mb-1 {
-  margin-bottom: $size-1;
+// Left margin
+.ml-auto {
+  margin-left: auto;
 }
 
-.mb-2 {
-  margin-bottom: $size-2;
+@for $i from 1 through 10 {
+  .ml-#{$i - 1},
+  .ml-#{$i - 1}:hover {
+    margin-left: nth($sizes, $i);
+  }
 }
 
-.mb-3 {
-  margin-bottom: $size-3;
-}
-
-.mb-4 {
-  margin-bottom: $size-4;
-}
-
-.mb-5 {
-  margin-bottom: $size-5;
-}
-
-.mb-6 {
-  margin-bottom: $size-6;
-}
-
-.mb-7 {
-  margin-bottom: $size-7;
-}
-
-.mb-8 {
-  margin-bottom: $size-8;
-}
-
-.mb-9 {
-  margin-bottom: $size-9;
-}
-
-// Right margin utilities
+// Right margin
 .mr-auto {
   margin-right: auto;
 }
 
-.mr-0 {
-  margin-right: $size-0;
-}
-
-.mr-1 {
-  margin-right: $size-1;
-}
-
-.mr-2 {
-  margin-right: $size-2;
-}
-
-.mr-3 {
-  margin-right: $size-3;
-}
-
-.mr-4 {
-  margin-right: $size-4;
-}
-
-.mr-5 {
-  margin-right: $size-5;
-}
-
-.mr-6 {
-  margin-right: $size-6;
-}
-
-.mr-7 {
-  margin-right: $size-7;
-}
-
-.mr-8 {
-  margin-right: $size-8;
-}
-
-.mr-9 {
-  margin-right: $size-9;
+@for $i from 1 through 10 {
+  .mr-#{$i - 1},
+  .mr-#{$i - 1}:hover {
+    margin-right: nth($sizes, $i);
+  }
 }

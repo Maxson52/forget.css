@@ -1,17 +1,29 @@
 // Defaults
 // --------------------------------------------------
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
+
+  padding: 0;
+  text-decoration-skip-ink: "auto";
+  margin: auto;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: clamp(2rem, 6vh, 6rem) clamp(2rem, 8vw, 16rem);
-}
 
-// Fonts
-// --------------------------------------------------
-body {
   font-family: $body-font;
   font-size: $size-body;
 }
@@ -22,4 +34,12 @@ body {
 
     font-size: $size-h1 - (0.2 * $i);
   }
+}
+
+// The basis of the framework
+.forget,
+.forget:hover,
+.forget:focus,
+.forget:active {
+  all: revert;
 }

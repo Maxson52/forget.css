@@ -1,46 +1,57 @@
 // Border Utility Classes
 // --------------------------------------------------
 
-.b-none {
+.b-none,
+.b-none:hover {
   border: none;
 }
 
-.b-red {
+.b-red,
+.b-red:hover {
   border: 1px solid $red;
 }
 
-.b-orange {
+.b-orange,
+.b-orange:hover {
   border: 1px solid $orange;
 }
 
-.b-yellow {
+.b-yellow,
+.b-yellow:hover {
   border: 1px solid $yellow;
 }
 
-.b-green {
+.b-green,
+.b-green:hover {
   border: 1px solid $green;
 }
 
-.b-blue {
+.b-blue,
+.b-blue:hover {
   border: 1px solid $blue;
 }
 
-.b-navy {
+.b-navy,
+.b-navy:hover {
   border: 1px solid $navy;
 }
 
-.b-purple {
+.b-purple,
+.b-purple:hover {
   border: 1px solid $purple;
 }
 
-.b-black {
+.b-black,
+.b-black:hover {
   border: 1px solid $black;
 }
 
-.b-white {
+.b-white,
+.b-white:hover {
   border: 1px solid $white;
 }
 
-.b-gray {
+.b-gray,
+.b-gray:hover {
   border: 1px solid $gray;
 }

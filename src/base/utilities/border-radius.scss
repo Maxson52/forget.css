@@ -1,46 +1,14 @@
-// // Border Radius Utility Classes
+// Border Radius Utility Classes
 // --------------------------------------------------
 
-.br-0 {
-  border-radius: $size-0;
+@for $i from 1 through 10 {
+  .br-#{$i},
+  .br-#{$i}:hover {
+    border-radius: nth($sizes, $i);
+  }
 }
 
-.br-1 {
-  border-radius: $size-1;
-}
-
-.br-2 {
-  border-radius: $size-2;
-}
-
-.br-3 {
-  border-radius: $size-3;
-}
-
-.br-4 {
-  border-radius: $size-4;
-}
-
-.br-5 {
-  border-radius: $size-5;
-}
-
-.br-6 {
-  border-radius: $size-6;
-}
-
-.br-7 {
-  border-radius: $size-7;
-}
-
-.br-8 {
-  border-radius: $size-8;
-}
-
-.br-9 {
-  border-radius: $size-9;
-}
-
-.br-circle {
+.br-circle,
+.br-circle:hover {
   border-radius: 100%;
 }
